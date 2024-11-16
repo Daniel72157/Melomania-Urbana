@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #9c9c9c;
+}
+h3 {
+    color: greenyellow;
+    font-size: 30px;
+}
+article {
+    background-color:  #353c44;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    max-width: 1700px;
+    border-radius: 5px;
+}
+
+div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color:  #353c44;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    max-width: 1700px;
+    border-radius: 5px;
+}
+nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    padding: 5px;
+    color: greenyellow;
+    background-color: transparent;
+}
+a {
+    color: greenyellow;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+a:hover{
+    background-color: #545c66;
+}
+
+#desc{
+    background-color: #353c44;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: greenyellow;
+    text-align: center;
+    font-size: x-large;
+}
+.urbana {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("urbana.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ranchera {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("ranchera.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.salsa {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("salsa.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.vallenato {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("vallenato.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("pop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media (max-width: 1200px) {
+    article, nav {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    h3 {
+        font-size: 25px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    h3 {
+        font-size: 20px;
+    }
+    article, #desc {
+        margin: 5px;
+        padding: 8px;
+    }
+    #desc {
+        font-size: large;
+    }
+    div ul {
+        flex-direction: column;
+    }
+}
